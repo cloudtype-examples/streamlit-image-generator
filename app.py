@@ -11,7 +11,7 @@ def generate_image_with_dalle(api_key, prompt, size):
             model="dall-e-3",
             prompt=prompt,
             size=size,
-            quality="standard",
+            quality="hd",
             n=1,
         )
         image_url = response.data[0].url
